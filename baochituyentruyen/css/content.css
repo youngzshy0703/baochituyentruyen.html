@@ -1,0 +1,36 @@
+.extra-content {
+    background-color: #e9ecef; /* Nền sáng cho khu vực bài viết nổi bật */
+    border-radius: 5px; /* Bo tròn góc */
+    padding: 15px; /* Thêm khoảng đệm */
+    margin: 10px 0; /* Khoảng cách giữa các phần */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ cho phần nổi bật */
+}
+
+.extra-content h3 {
+    color: #333; /* Màu tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.extra-content ul {
+    list-style-type: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0; /* Xóa khoảng đệm */
+}
+
+.extra-content li {
+    margin-bottom: 15px; /* Khoảng cách giữa các bài viết trong khu vực nổi bật */
+}
+
+.extra-content h4 {
+    margin: 0; /* Xóa khoảng cách mặc định */
+    font-size: 18px; /* Kích thước tiêu đề nhỏ hơn */
+}
+
+.extra-content a {
+    color: #007BFF; /* Màu cho liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu */
+}
+
+.extra-content a:hover {
+    color: #0056b3; /* Màu khi hover */
+}

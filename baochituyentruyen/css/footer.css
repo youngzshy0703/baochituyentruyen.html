@@ -1,0 +1,53 @@
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần */
+    justify-content: space-between; /* Phân bổ đều không gian giữa các phần */
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa */
+    padding: 0 20px; /* Thêm padding cho phần nội dung */
+}
+
+.footer-section {
+    flex: 1; /* Mỗi phần sẽ chiếm 1/3 không gian của footer */
+    margin: 0 20px; /* Khoảng cách giữa các phần */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 5px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: left; /* Căn chỉnh footer dưới cùng sang bên trái */
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 0 20px; /* Thêm padding cho footer dưới cùng */
+}

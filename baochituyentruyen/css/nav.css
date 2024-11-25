@@ -1,0 +1,99 @@
+nav {
+    background: #333; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Tăng bóng cho nav */
+    transition: background 0.3s ease; /* Hiệu ứng chuyển đổi nền */
+    padding: 10px 20px; /* Thay đổi padding để thu ngắn thanh chứa */
+    border-radius: 15px; /* Bo tròn cho nav */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav:hover {
+    background: #444; /* Tối nền khi hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 20px; /* Tăng khoảng cách giữa các mục */
+    position: relative; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Giảm padding cho các mục để phù hợp với thanh chứa ngắn hơn */
+    position: relative;
+    border-radius: 30px; /* Bo tròn các góc */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Đặt thanh dưới cùng */
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: #007BFF; 
+    transition: width 0.3s ease, left 0.3s ease, bottom 0.3s ease; /* Thêm hiệu ứng cho thanh */
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+    left: 0;
+    bottom: 0; /* Đưa thanh lên khi hover */
+}
+
+nav ul li a:hover {
+    background: rgba(0, 123, 255, 0.8); 
+    color: #fff; 
+    transform: translateY(-3px); /* Nâng nhẹ lên khi hover */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Thêm bóng cho nền */
+}
+
+nav .dropdown {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background: #444; /* Đổi màu nền cho dropdown */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1; 
+    opacity: 0; /* Bắt đầu với độ trong suốt 0 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng cho dropdown */
+    transform: translateY(-10px); /* Di chuyển lên một chút khi không hiển thị */
+    border-radius: 10px; /* Bo tròn cho dropdown */
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+    opacity: 1; /* Hiển thị khi hover */
+    transform: translateY(0); /* Đưa xuống vị trí ban đầu */
+}
+
+nav .dropdown li {
+    width: 150px; 
+    margin: 5px 0; /* Thêm khoảng cách giữa các mục con */
+}
+
+nav .dropdown li a {
+    padding: 12px 15px; 
+    color: #fff; 
+    text-decoration: none; /* Bỏ gạch chân */
+    display: block; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+nav .dropdown li a:hover {
+    background: #007BFF; 
+    color: #fff; 
+    transform: translateX(5px); 
+}

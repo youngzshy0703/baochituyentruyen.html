@@ -1,0 +1,60 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif; /* Thay đổi kiểu chữ */
+    font-size: 36px; /* Kích thước chữ */
+    color: #ffffff; /* Màu chữ */
+    text-align: center; /* Căn giữa chữ */
+    text-transform: uppercase; /* Chữ hoa toàn bộ */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng cho chữ */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+header {
+    background: #444;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px; 
+    transition: transform 0.3s ease, text-shadow 0.3s ease; 
+}
+
+header h1:hover {
+    transform: translateY(-5px); 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Tăng độ bóng khi hover */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.news-layout {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.entertainment-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Khoảng cách giữa các bài viết */
+}

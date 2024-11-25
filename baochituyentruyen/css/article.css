@@ -1,0 +1,93 @@
+.side-articles {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 20px; 
+    max-height: 1100px; 
+    overflow-y: auto; 
+}
+
+.main-article {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 10px; 
+    max-width: 300px; 
+    max-height: 500px;
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+.main-article:hover {
+    transform: translateY(-5px); /* Nâng nhẹ khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng khi hover */
+}
+
+.main-article h3 {
+    font-size: 24px;
+}
+
+.main-article img {
+    width: 300px;
+}
+
+.side-article {
+    margin-bottom: 10px; 
+}
+
+article {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+article:hover {
+    transform: scale(1.02); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng khi hover */
+}
+
+article img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+.side-article {
+    background-color: #ffffff; /* Nền trắng cho bài viết phụ */
+    border-radius: 5px; /* Bo tròn góc */
+    padding: 10px; /* Thêm khoảng đệm */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+.side-article p {
+    font-family: 'Time new noman', serif; /* Thay đổi font chữ */
+    font-size: 20px; /* Thay đổi kích thước font chữ */
+    color: #000000; /* Thay đổi màu chữ */
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
+}
+
+.side-article:hover {
+    transform: scale(1.02); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng khi hover */
+}
+.entertainment-article {
+    background: #fff;
+    padding: 15px; /* Thêm padding cho bài viết giải trí */
+    border-radius: 5px; /* Bo tròn góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+.entertainment-article:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng khi hover */
+}
+
+.entertainment-article a {
+    text-decoration: none; /* Bỏ gạch chân cho các liên kết trong phần Giải Trí */
+}
